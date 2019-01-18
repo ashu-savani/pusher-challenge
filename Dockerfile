@@ -1,4 +1,4 @@
-#using the python image 
+#using the python image
 FROM python:3
 
 WORKDIR /app
@@ -10,5 +10,8 @@ RUN pip install -r requirements.txt
 
 #setting the environment variable to use flask
 ENV FLASK_APP=routes.py
+
+#exposing port being used by flask
+EXPOSE 5000
 
 CMD ["flask", "run"]
