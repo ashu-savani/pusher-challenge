@@ -14,4 +14,4 @@ ENV FLASK_APP=routes.py
 #exposing port being used by flask
 EXPOSE 5000
 
-CMD ["flask", "run"]
+CMD ["flask", "run", "--host=0.0.0.0"]
